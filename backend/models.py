@@ -18,7 +18,7 @@ class Task(Base):
     __tablename__ = "tasks"
 
     id = Column(Integer, primary_key=True, index=True)
-    task_name = Column(String, nullable=False)   # <-- instead of many columns
+    task_name = Column(String, nullable=False)
     due_date = Column(Date, nullable=True)
     completed = Column(Boolean, default=False)
 
